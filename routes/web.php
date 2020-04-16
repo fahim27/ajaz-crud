@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "StudentController@index");
+Route::resource('student', 'StudentController');
+
